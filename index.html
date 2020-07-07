@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Firefox Send</title>
+    <meta name="description" content="Firefox Send" />
+    <link rel="icon" href="favicon.ico" />
+
+    <style>
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: optional;
+        src: url("Inter-Medium.woff2") format("woff2"),
+          url("Inter-Medium.woff") format("woff");
+      }
+
+      body {
+        background-image: url(body-bg.svg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        background-color: rgba(249, 249, 250);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Inter, sans-serif;
+      }
+
+      main {
+        box-shadow: 0 12px 18px 2px rgba(34, 0, 51, 0.04),
+          0 6px 22px 4px rgba(7, 48, 114, 0.12),
+          0 6px 10px -4px rgba(14, 13, 26, 0.12);
+        padding: 36px;
+        max-width: 480px;
+        width: 96%;
+        background: white;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+        font-weight: 500;
+        border-radius: 24px;
+        color: #20133a;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          box-shadow: transparent;
+          height: 100vh;
+          width: 100%;
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0;
+          padding: 16px;
+          background: none;
+        }
+
+        p {
+          max-width: 400px;
+        }
+      }
+
+      header {
+        width: 64px;
+        height: 64px;
+        background-image: url("logo.svg");
+        background-size: 64px 64px;
+        margin: 0 auto 24px;
+      }
+
+      .footer {
+        height: 32px;
+        width: 100px;
+        background-size: 100px 32px;
+        background-image: url("mozilla.svg");
+        display: block;
+        margin: 32px auto 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header></header>
+      <p>Firefox Send is temporarily unavailable while we work on product
+      improvements.</p>
+      <p>We appreciate your patience while we make the Firefox Send
+      experience better.</p>
+      <a class="footer" href="https://mozilla.org" title="mozilla"></a>
+    </main>
+  </body>
+</html>
